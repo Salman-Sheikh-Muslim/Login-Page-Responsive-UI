@@ -115,13 +115,19 @@ body, html {
 
   .email-div input, .password-div input {
     padding-left: 30px;
-  }
-  
-#email, #password{
+    border: 1px solid;
+    border-color: #aaa;
     width: 100%;
     height: 2rem;
     border-radius: 5px;
-}
+  }
+  
+
+  .email-div input:focus, .password-div input:focus {
+    border: 1px solid;
+    border-color: #000000;
+  }
+
 
 .login-form .sign-in-div{
     max-width: 100%;
@@ -150,9 +156,15 @@ body, html {
     color: #FFFFFF;
     font-weight: bold;
     border-radius: 5px;
+    border: 1px solid;
     border-color: #06808b;
 }
 
+#submit-btn:active{
+    
+    transform: translateY(-2px);
+    transition: all 0.2s ease-in-out;
+}
 
 @media screen and (max-width: 519px){
 
